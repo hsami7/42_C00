@@ -41,15 +41,3 @@ void	ft_putnbr(int nb)
 		ft_putchar(nb + 48);
 	}
 }
-
-#include <stdio.h>
-
-void	ft_putnbr(int nb);
-
-int	main(void)
-{
-	int nb = 1234;
-
-	ft_putnbr(nb);
-	return (0);
-}
