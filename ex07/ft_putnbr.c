@@ -6,11 +6,16 @@
 /*   By: hsami <hsami@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 16:13:10 by hsami             #+#    #+#             */
-/*   Updated: 2023/06/25 18:23:38 by hsami            ###   ########.fr       */
+/*   Updated: 2023/06/25 18:51:48 by hsami            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
+}
 
 void	ft_putnbr(int nb)
 
@@ -35,4 +40,16 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar(nb + 48);
 	}
+}
+
+#include <stdio.h>
+
+void	ft_putnbr(int nb);
+
+int	main(void)
+{
+	int nb = 1234;
+
+	ft_putnbr(nb);
+	return (0);
 }
